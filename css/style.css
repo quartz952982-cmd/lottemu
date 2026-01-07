@@ -722,7 +722,9 @@ header.down {
     color: #666;
     font-weight: 500;
 }
-
+.tap-wrap li{
+    cursor: pointer;
+}
 
 .tap-wrap:nth-child(1)::after {
     content: '';
