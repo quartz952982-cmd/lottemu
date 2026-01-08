@@ -9,6 +9,7 @@ $(function () {
             $('.top-button').addClass('down')
             $('.top-text-color').addClass('down')
             $('.Licon svg').addClass('down')
+             $('.header-top').addClass('active')
         } else {
             $('header').removeClass('down')
             $('.t-b-inner svg').removeClass('down')
@@ -16,6 +17,7 @@ $(function () {
             $('.top-button').removeClass('down')
             $('.top-text-color').removeClass('down')
             $('.Licon svg').removeClass('down')
+             $('.header-top').removeClass('active')
         }
     })
 
@@ -37,6 +39,7 @@ $(function () {
         $('.top-button').addClass('on')
         $('.top-text-color').addClass('on')
         $('.Licon').addClass('on')
+        $('.header-top').addClass('active')
     })
     $('.main-listw > li').mouseleave(function () {
         $('header').removeClass('on')
@@ -45,6 +48,7 @@ $(function () {
         $('.top-button').removeClass('on')
         $('.top-text-color').removeClass('on')
         $('.Licon').removeClass('on')
+        $('.header-top').removeClass('active')
     })
 
     $('.tap-wrap li').click(function () {
@@ -55,6 +59,6 @@ $(function () {
         $('.card-list-containal').eq(idx).show()
 
     })
-   
+
     $('.tap-wrap li').eq(0).trigger('click')
 })
